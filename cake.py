@@ -18,6 +18,17 @@ while True:
             if event.button == 1:
                 click_x, click_y = pygame.mouse.get_pos()
                 print('button 1 clicked at %d, %d' % (click_x, click_y))
+                if 35 <= click_x <= 85:
+                    if 65 <= click_y <= 115:
+                        print('red')
+                    elif 155 <= click_y <= 205:
+                        print('green')
+                    elif 245 <= click_y <= 295:
+                        print('blue')
+                    elif 335 <= click_y <= 385:
+                        print('yellow')
+                    else:
+                        print('no icing there')
 
     # Redraw the background
     screen.fill(pygame.Color('grey'))
