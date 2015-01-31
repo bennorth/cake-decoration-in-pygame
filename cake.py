@@ -14,4 +14,7 @@ while True:
     # Redraw the background
     screen.fill(pygame.Color('grey'))
 
+    pygame.draw.circle(screen, pygame.Color('black'), (300, 300), 120, 2)
+
     pygame.display.flip()
+
