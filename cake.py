@@ -29,8 +29,6 @@ while True:
                         current_icing_colour = 'blue'
                     elif 335 <= click_y <= 385:
                         current_icing_colour = 'yellow'
-                    else:
-                        print('no icing there')
 
     # Redraw the background
     screen.fill(pygame.Color('grey'))
