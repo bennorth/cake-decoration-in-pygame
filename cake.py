@@ -10,3 +10,8 @@ while True:
     # Limit frame speed to 30 FPS
     #
     time_passed = clock.tick(30)
+
+    # Redraw the background
+    screen.fill(pygame.Color('grey'))
+
+    pygame.display.flip()
