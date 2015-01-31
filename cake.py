@@ -13,6 +13,12 @@ while True:
     #
     time_passed = clock.tick(30)
 
+    for event in pygame.event.get():
+        if event.type == pygame.MOUSEBUTTONDOWN:
+            if event.button == 1:
+                click_x, click_y = pygame.mouse.get_pos()
+                print('button 1 clicked at %d, %d' % (click_x, click_y))
+
     # Redraw the background
     screen.fill(pygame.Color('grey'))
 
