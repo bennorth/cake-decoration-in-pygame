@@ -22,13 +22,13 @@ while True:
                 print('button 1 clicked at %d, %d' % (click_x, click_y))
                 if 35 <= click_x <= 85:
                     if 65 <= click_y <= 115:
-                        print('red')
+                        current_icing_colour = 'red'
                     elif 155 <= click_y <= 205:
-                        print('green')
+                        current_icing_colour = 'green'
                     elif 245 <= click_y <= 295:
-                        print('blue')
+                        current_icing_colour = 'blue'
                     elif 335 <= click_y <= 385:
-                        print('yellow')
+                        current_icing_colour = 'yellow'
                     else:
                         print('no icing there')
 
