@@ -8,6 +8,8 @@ clock = pygame.time.Clock()
 
 icing_colours = ['red', 'green', 'blue', 'yellow']
 
+current_icing_colour = None
+
 while True:
     # Limit frame speed to 30 FPS
     #
@@ -32,6 +34,10 @@ while True:
 
     # Redraw the background
     screen.fill(pygame.Color('grey'))
+
+    # Draw interior of cake first, so black edge is visible.
+    if current_icing_colour is not None:
+        pygame.draw.circle(screen, pygame.Color(current_icing_colour), (300, 300), 120, 0)
 
     pygame.draw.circle(screen, pygame.Color('black'), (300, 300), 120, 2)
 
