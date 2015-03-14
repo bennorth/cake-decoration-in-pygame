@@ -57,8 +57,10 @@ while not done:
                 if click_x > 500:
                     if 20 < click_y < 67:
                         print('strawberry')
+                        current_decoration = strawberry
                     elif 107 < click_y < 160:
                         print('marshmallows')
+                        current_decoration = marshmallows
                     else:
                         print('in decoration menu but not on decoration')
 
