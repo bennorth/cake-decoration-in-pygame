@@ -6,7 +6,7 @@ screen = pygame.display.set_mode((600, 600))
 clock = pygame.time.Clock()
 
 
-icing_colours = ['red', 'green', 'blue', 'yellow']
+icing_colours = ['red', 'white', 'green', 'yellow']
 icing_places = [70, 210, 350, 490]
 
 current_icing_colour = None
