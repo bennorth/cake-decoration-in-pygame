@@ -26,6 +26,10 @@ while True:
             if event.button == 1:
                 click_x, click_y = pygame.mouse.get_pos()
                 print('button 1 clicked at %d, %d' % (click_x, click_y))
+
+                if 180 < click_x< 420 and 180 < click_y< 420:
+                    print ('cake')
+
                 if 28 < click_x < 171:
                     if 1 < click_y < 139:
                         current_icing_colour = (255, 0, 0)
