@@ -56,9 +56,10 @@ while not done:
 
     pygame.draw.circle(screen, pygame.Color('black'), (300, 300), 120, 2)
 
-    # Has the player put a strawberry onto the cake?  Draw it if so.
-    if strawberry_x is not None:
-        screen.blit(strawberry, (strawberry_x, strawberry_y))
+    # Has the player put any decorations onto the cake?  Draw them if so.
+    for decoration in decorations:
+        x, y, picture = decoration
+        screen.blit(picture, (x, y))
 
     for i in range(len(icing_colours)):
         pygame.draw.circle(screen, pygame.Color(icing_colours[i]), (100, icing_places[i]), 70)
