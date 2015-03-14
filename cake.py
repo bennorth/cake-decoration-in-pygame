@@ -11,6 +11,9 @@ icing_places = [70, 210, 350, 490]
 
 current_icing_colour = (230,150,60)
 
+strawberry = pygame.image.load('strawberryedited.png')
+strawberry.convert_alpha()
+
 while True:
     # Limit frame speed to 30 FPS
     #
