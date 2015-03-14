@@ -84,6 +84,9 @@ while not done:
         screen.blit(decoration_choice, (500, decoration_choice_y))
         decoration_choice_y += 80
 
+    # Remind player what their current chosen decoration is.
+    screen.blit(current_decoration, (300, 20))
+
     # Has the player put any decorations onto the cake?  Draw them if so.
     for decoration in decorations:
         x, y, picture = decoration
