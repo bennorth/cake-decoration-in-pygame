@@ -37,6 +37,7 @@ while not done:
                     print ('cake')
                     strawberry_x = click_x - strawberry.get_width() / 2
                     strawberry_y = click_y - strawberry.get_height() / 2
+                    decorations.append((strawberry_x, strawberry_y, strawberry))
 
                 if 28 < click_x < 171:
                     if 1 < click_y < 139:
