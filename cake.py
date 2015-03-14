@@ -16,6 +16,8 @@ strawberry.convert_alpha()
 strawberry_x = None
 strawberry_y = None
 
+current_decoration = strawberry
+
 decorations = []
 
 done = False
