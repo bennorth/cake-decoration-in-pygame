@@ -17,6 +17,9 @@ strawberry.convert_alpha()
 marshmallows = pygame.image.load('Marshmallows.png')
 marshmallows.convert_alpha()
 
+delete_all = pygame.image.load('delete-all-decorations.png')
+delete_all.convert_alpha()
+
 decoration_menu = [strawberry, marshmallows]
 
 current_decoration = strawberry
