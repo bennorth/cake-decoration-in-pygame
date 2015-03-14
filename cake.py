@@ -14,6 +14,9 @@ current_icing_colour = (230,150,60)
 strawberry = pygame.image.load('strawberryedited.png')
 strawberry.convert_alpha()
 
+marshmallows = pygame.image.load('Marshmallows.png')
+marshmallows.convert_alpha()
+
 decoration_menu = [strawberry]
 
 current_decoration = strawberry
