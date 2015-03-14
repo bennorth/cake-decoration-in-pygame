@@ -16,6 +16,8 @@ strawberry.convert_alpha()
 strawberry_x = None
 strawberry_y = None
 
+decorations = []
+
 done = False
 while not done:
     # Limit frame speed to 30 FPS
