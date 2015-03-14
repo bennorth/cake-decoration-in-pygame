@@ -54,6 +54,9 @@ while not done:
                     elif 420 < click_y < 559:
                         current_icing_colour = (255, 255, 0)
 
+                if click_x > 500:
+                    print('maybe in decoration menu somewhere')
+
     # Redraw the background
     screen.fill(pygame.Color('grey'))
 
