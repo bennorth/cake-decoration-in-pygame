@@ -9,7 +9,7 @@ clock = pygame.time.Clock()
 icing_colours = ['red', 'white', 'green', 'yellow']
 icing_places = [70, 210, 350, 490]
 
-current_icing_colour = None
+current_icing_colour = (230,150,60)
 
 while True:
     # Limit frame speed to 30 FPS
@@ -21,22 +21,22 @@ while True:
             if event.button == 1:
                 click_x, click_y = pygame.mouse.get_pos()
                 print('button 1 clicked at %d, %d' % (click_x, click_y))
-                if 35 <= click_x <= 85:
-                    if 65 <= click_y <= 115:
-                        current_icing_colour = 'red'
-                    elif 155 <= click_y <= 205:
-                        current_icing_colour = 'green'
-                    elif 245 <= click_y <= 295:
-                        current_icing_colour = 'blue'
-                    elif 335 <= click_y <= 385:
-                        current_icing_colour = 'yellow'
+                if 28 < click_x < 171:
+                    if 1 < click_y < 139:
+                        current_icing_colour = (255, 0, 0)
+                    elif 278 < click_y < 420:
+                        current_icing_colour = (0, 255, 0)
+                    elif 138 < click_y < 278:
+                        current_icing_colour = (255, 255, 255)
+                    elif 420 < click_y < 559:
+                        current_icing_colour = (255, 255, 0)
 
     # Redraw the background
     screen.fill(pygame.Color('grey'))
 
     # Draw interior of cake first, so black edge is visible.
     if current_icing_colour is not None:
-        pygame.draw.circle(screen, pygame.Color(current_icing_colour), (300, 300), 120, 0)
+        pygame.draw.circle(screen, pygame.Color(*current_icing_colour), (300, 300), 120, 0)
 
     pygame.draw.circle(screen, pygame.Color('black'), (300, 300), 120, 2)
 
