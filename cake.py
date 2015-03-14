@@ -66,6 +66,7 @@ while not done:
                         current_decoration = marshmallows
                     elif 188 < click_y < 248:
                         print('delete all')
+                        decorations = []
                     else:
                         print('in decoration menu but not on decoration')
 
