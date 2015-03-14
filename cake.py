@@ -16,12 +16,16 @@ strawberry.convert_alpha()
 strawberry_x = None
 strawberry_y = None
 
-while True:
+done = False
+while not done:
     # Limit frame speed to 30 FPS
     #
     time_passed = clock.tick(30)
 
     for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            done = True
+
         if event.type == pygame.MOUSEBUTTONDOWN:
             if event.button == 1:
                 click_x, click_y = pygame.mouse.get_pos()
