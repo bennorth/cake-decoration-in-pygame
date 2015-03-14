@@ -55,7 +55,12 @@ while not done:
                         current_icing_colour = (255, 255, 0)
 
                 if click_x > 500:
-                    print('maybe in decoration menu somewhere')
+                    if 20 < click_y < 67:
+                        print('strawberry')
+                    elif 107 < click_y < 160:
+                        print('marshmallows')
+                    else:
+                        print('in decoration menu but not on decoration')
 
     # Redraw the background
     screen.fill(pygame.Color('grey'))
