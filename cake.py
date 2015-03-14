@@ -29,8 +29,8 @@ while True:
 
                 if 180 < click_x< 420 and 180 < click_y< 420:
                     print ('cake')
-                    strawberry_x = click_x
-                    strawberry_y = click_y
+                    strawberry_x = click_x - strawberry.get_width() / 2
+                    strawberry_y = click_y - strawberry.get_height() / 2
 
                 if 28 < click_x < 171:
                     if 1 < click_y < 139:
