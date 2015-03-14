@@ -61,6 +61,13 @@ while not done:
 
     pygame.draw.circle(screen, pygame.Color('black'), (300, 300), 120, 2)
 
+    # Draw the menu where the player can choose which decoration they're
+    # about to put on the cake.
+    decoration_choice_y = 20
+    for decoration_choice in decoration_menu:
+        screen.blit(decoration_choice, (500, decoration_choice_y))
+        decoration_choice_y += 80
+
     # Has the player put any decorations onto the cake?  Draw them if so.
     for decoration in decorations:
         x, y, picture = decoration
