@@ -35,6 +35,13 @@ current_decoration = strawberry
 
 decorations = []
 
+# Flashing background.
+
+background_colours = [(204, 0, 204),
+                      (0, 128, 255),
+                      (204, 0, 102)]
+current_bg = 0
+
 done = False
 while not done:
     # Limit frame speed to 30 FPS
@@ -86,8 +93,8 @@ while not done:
                     if len(decorations) > 0:
                         del decorations [-1]
 
-    # Redraw the background
-    screen.fill(pygame.Color('grey'))
+    # Redraw the background with its current colour
+    screen.fill(pygame.Color(*background_colours[current_bg]))
 
     pygame.draw.circle(screen, pygame.Color(*current_icing_colour), (300, 300), 120, 0)
 
