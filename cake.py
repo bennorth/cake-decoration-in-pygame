@@ -17,6 +17,15 @@ strawberry.convert_alpha()
 marshmallows = pygame.image.load('Marshmallows.png')
 marshmallows.convert_alpha()
 
+sprinkles = pygame.image.load('awesomesprinkles.png')
+sprinkles.convert_alpha()
+
+jellybeans = pygame.image.load('awesomejellybeans.png')
+jellybeans.convert_alpha()
+
+chocolate_chips = pygame.image.load('awesomechocochips.png')
+chocolate_chips.convert_alpha()
+
 decoration_menu = [strawberry, marshmallows]
 
 current_decoration = strawberry
