@@ -70,6 +70,12 @@ while not done:
                     elif 107 < click_y < 160:
                         print('marshmallows')
                         current_decoration = marshmallows
+                    elif 184 < click_y < 224:
+                        current_decoration = sprinkles
+                    elif 259 < click_y < 316:
+                        current_decoration = jellybeans
+                    elif 345 < click_y < 379:
+                        current_decoration = chocolate_chips
                     else:
                         print('in decoration menu but not on decoration')
 
