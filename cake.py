@@ -26,6 +26,9 @@ jellybeans.convert_alpha()
 chocolate_chips = pygame.image.load('awesomechocochips.png')
 chocolate_chips.convert_alpha()
 
+back_arrow = pygame.image.load('awesomepinkarrow.png')
+back_arrow.convert_alpha()
+
 decoration_menu = [strawberry, marshmallows, sprinkles, jellybeans, chocolate_chips]
 
 current_decoration = strawberry
@@ -100,6 +103,8 @@ while not done:
     for decoration in decorations:
         x, y, picture = decoration
         screen.blit(picture, (x, y))
+
+    screen.blit(back_arrow, (300, 30))
 
     for i in range(len(icing_colours)):
         pygame.draw.circle(screen, pygame.Color(icing_colours[i]), (100, icing_places[i]), 70)
