@@ -17,10 +17,7 @@ strawberry.convert_alpha()
 marshmallows = pygame.image.load('Marshmallows.png')
 marshmallows.convert_alpha()
 
-delete_all = pygame.image.load('delete-all-decorations.png')
-delete_all.convert_alpha()
-
-decoration_menu = [strawberry, marshmallows, delete_all]
+decoration_menu = [strawberry, marshmallows]
 
 current_decoration = strawberry
 
@@ -64,9 +61,6 @@ while not done:
                     elif 107 < click_y < 160:
                         print('marshmallows')
                         current_decoration = marshmallows
-                    elif 188 < click_y < 248:
-                        print('delete all')
-                        decorations = []
                     else:
                         print('in decoration menu but not on decoration')
 
