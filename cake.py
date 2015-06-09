@@ -82,6 +82,10 @@ while not done:
                     else:
                         print('in decoration menu but not on decoration')
 
+                if 44 <= click_y <= 100 and 306 <= click_x <= 377:
+                    if len(decorations) > 0:
+                        del decorations [-1]
+
     # Redraw the background
     screen.fill(pygame.Color('grey'))
 
