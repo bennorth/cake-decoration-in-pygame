@@ -41,6 +41,7 @@ background_colours = [(204, 0, 204),
                       (0, 128, 255),
                       (204, 0, 102)]
 current_bg = 0
+times_used_bg = 0
 
 done = False
 while not done:
@@ -95,6 +96,15 @@ while not done:
 
     # Redraw the background with its current colour
     screen.fill(pygame.Color(*background_colours[current_bg]))
+
+    # Is it time to move to a new background?
+    times_used_bg += 1
+    if times_used_bg == 30:
+        if current_bg == 2:
+            current_bg = 0
+        else:
+            current_bg += 1
+        times_used_bg = 0
 
     pygame.draw.circle(screen, pygame.Color(*current_icing_colour), (300, 300), 120, 0)
 
